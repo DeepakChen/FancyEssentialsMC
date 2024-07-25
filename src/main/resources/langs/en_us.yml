@@ -1,0 +1,91 @@
+messages:
+  plugin:
+    name: "FancyEssentials"
+    enable: "FancyEssentials has been enabled!"
+    disable: "FancyEssentials has been disabled!"
+  player:
+    not_found: "Player not found!"
+    not_a_player: "Non-players cannot execute this request."
+  login:
+    ban_permanent: "You are permanently banned.\nReason: {0}"
+    ban_temp: "You are temporarily banned until {0}.\nReason: {1}"
+  input:
+    invalid_coordinates: "Invalid coordinates. Please use the format: x y z"
+commands:
+  ban:
+    usage: "Usage: /ban <player> [reason] [duration]"
+    success: "Player {0} has been banned.\nReason: {1}\nDuration: {2}"
+    failure: "Player {0} was been banned or does not exist."
+    default_reason: "Banned by an operator."
+  kick:
+    usage: "Usage: /kick <player> [reason]"
+    kicked: "You have been kicked.\nReason: {0}"
+    success: "Player {0} has been kicked for: {1}"
+    default_reason: "Kicked by an operator."
+  unban:
+    usage: "Usage: /unban <player>"
+    success: "Player {0} has been unbanned."
+    failure: "Player {0} was not banned or does not exist."
+  playerinfo:
+    usage: "Usage: /playerinfo <player>"
+    details: "Player Name: {0}\nDisplay Name: {1}\nLocation: {2}\nIP Address: {3}"
+    details_offline: "Player Name: {0}\nDisplay Name: {1}\nIP Address: {2}\nLast Login: {3}\nLocation: {4}"
+  tp:
+    usage: "Usage: /tp <player>"
+    success: "You have been teleported to player {0}."
+    failure: "Player {0} not found."
+  tpa:
+    usage: "Usage: /tpa <player>"
+    request: "Player {0} has sent you a teleport request.\nUse /tpaccept to accept,\nOr use /tpdeny to deny."
+    success: "Teleport request sent to player {0}."
+    failure: "Player {0} not found."
+  tpahere:
+    usage: "Usage: /tpahere <player>"
+    request: "Player {0} has request you to teleport to him/her.\nUse /tpaccept to accept,\nOr use /tpdeny to deny."
+    success: "Teleport request sent to player {0}."
+    failure: "Player {0} not found."
+  tpaccept:
+    usage: "Usage: /tpaccept"
+    success: "Teleport request accepted."
+    failure: "No pending teleport request."
+  tpdeny:
+    usage: "Usage: /tpdeny"
+    success: "Teleport request denied."
+    failure: "No pending teleport request."
+    denied: "Your teleport request has been denied."
+  home:
+    usage: "Usage: /home [home name]"
+    success: "Teleported to home {0}."
+    cancelled: "Teleportation cancelled because you moved before time got out."
+    failure: "Home {0} not found."
+  sethome:
+    usage: "Usage: /sethome <home name>"
+    success: "Home {0} has been set."
+  delhome:
+    usage: "Usage: /delhome <home name>"
+    success: "Home {0} has been deleted."
+  homelist:
+    usage: "Usage: /homelist [Player name]"
+    no_homes: "{0} have no homes set."
+    header: "Homes for {0}:"
+    entry: "- {0}: ({1}, {2}, {3}, {4})"
+  warp:
+    usage: "Usage: /warp <location>"
+    success: "Teleported to location {0}."
+    failure: "Warp {0} not found."
+  setwarp:
+    usage: "Usage: /setwarp <location>"
+    success: "Warp {0} has been set."
+  delwarp:
+    usage: "Usage: /delwarp <location>"
+    success: "Warp {0} has been deleted."
+    failure: "Warp {0} not found."
+  warp_list:
+    usage: "Usage: /warplist"
+    no_warps: "There are no warps set."
+    header: "Warps:"
+    entry: "- {0}: ({1}, {2}, {3}, {4})"
+  rtp:
+    usage: "Usage: /rtp"
+    success: "Random teleportation successful."
+    failure: "Random teleportation failed."

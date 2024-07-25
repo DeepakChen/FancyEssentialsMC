@@ -1,0 +1,91 @@
+messages:
+  plugin:
+    name: "FancyEssentials"
+    enable: "FancyEssentials 已启用！"
+    disable: "FancyEssentials 已禁用！"
+  player:
+    not_found: "未找到玩家！"
+    not_a_player: "非玩家无法执行此请求。"
+  login:
+    ban_permanent: "你已被永久封禁。\n原因：{0}"
+    ban_temp: "你已被暂时封禁，直至 {0}。\n原因：{1}"
+  input:
+    invalid_coordinates: "无效的坐标！请使用这样的格式：x y z"
+commands:
+  ban:
+    usage: "用法: /ban <玩家> [原因] [时长]"
+    success: "玩家 {0} 已被封禁。\n原因：{1}\n时长：{2}"
+    failure: "玩家 {0} 已被封禁或不存在。"
+    default_reason: "被管理员封禁。"
+  kick:
+    usage: "用法: /kick <玩家> [原因]"
+    kicked: "你已被踢出。\n原因：{0}"
+    success: "玩家 {0} 因以下原因被踢出：{1}"
+    default_reason: "被管理员踢出。"
+  unban:
+    usage: "用法: /unban <玩家>"
+    success: "玩家 {0} 已被解封。"
+    failure: "玩家 {0} 未被封禁或不存在。"
+  playerinfo:
+    usage: "用法: /playerinfo <玩家>"
+    details: "玩家名：{0}\n显示名：{1}\n位置：{2}\nIP 地址：{3}"
+    details_offline: "玩家名：{0}\n显示名：{1}\nIP 地址：{2}\n上次登录：{3}\n位置：{4}"
+  tp:
+    usage: "用法: /tp <玩家>"
+    success: "你已传送到玩家 {0}。"
+    failure: "未找到玩家 {0}。"
+  tpa:
+    usage: "用法: /tpa <玩家>"
+    request: "玩家 {0} 向你发送了传送请求。\n输入/tpaccept同意请求，\n或输入/tpdeny拒绝请求。"
+    success: "传送请求已发送给玩家 {0}。"
+    failure: "未找到玩家 {0}。"
+  tpahere:
+    usage: "用法: /tpahere <玩家>"
+    request: "玩家 {0} 请求你传送到他/她。\n输入/tpaccept同意请求，\n或输入/tpdeny拒绝请求。"
+    success: "传送请求已发送给玩家 {0}。"
+    failure: "未找到玩家 {0}。"
+  tpaccept:
+    usage: "用法: /tpaccept"
+    success: "传送请求已接受。"
+    failure: "没有待处理的传送请求。"
+  tpdeny:
+    usage: "用法: /tpdeny"
+    success: "传送请求已拒绝。"
+    failure: "没有待处理的传送请求。"
+    denied: "你的传送请求已被拒绝。"
+  home:
+    usage: "用法: /home [家名]"
+    success: "已传送到家 {0}。"
+    cancelled: "由于你在倒计时内移动了，传送已取消。"
+    failure: "未找到家 {0}。"
+  sethome:
+    usage: "用法: /sethome <家名>"
+    success: "家 {0} 已设置。"
+  delhome:
+    usage: "用法: /delhome <家名>"
+    success: "家 {0} 已删除。"
+  homelist:
+    usage: "用法: /homelist [玩家名]"
+    no_homes: "{0} 没有设置任何家。"
+    header: "{0} 的家列表："
+    entry: "- {0}：({1}, {2}, {3}, {4})"
+  warp:
+    usage: "用法: /warp <地标>"
+    success: "已传送到地标 {0}。"
+    failure: "未找到地标 {0}。"
+  setwarp:
+    usage: "用法: /setwarp <地标>"
+    success: "地标 {0} 已设置。"
+  delwarp:
+    usage: "用法: /delwarp <地标>"
+    success: "地标 {0} 已删除。"
+    failure: "地标 {0} 未找到。"
+  warplist:
+    usage: "用法: /warplist"
+    no_warps: "没有设置任何地标。"
+    header: "地标列表："
+    entry: "- {0}：({1}, {2}, {3}, {4})"
+  rtp:
+    usage: "用法: /rtp"
+    success: "已随机传送。"
+    failure: "随机传送失败。"

@@ -1,0 +1,111 @@
+name: FancyEssentials
+version: '${version}'
+main: com.deepakchen.fancyessentials.FancyEssentials
+api-version: '1.20'
+commands:
+  kick:
+    description: Kicks a player from the server.
+    usage: /<command> <player> <reason>
+  ban:
+    description: Bans a player permanently.
+    usage: /<command> <player> <reason> <duration>
+  unban:
+    description: Unbans a player.
+    usage: /<command> <player>
+  playerinfo:
+    description: Displays information about a player.
+    usage: /<command> <player>
+  tp:
+    description: Teleports a player to another player.
+    usage: /<command> <player> [target]
+  tpa:
+    description: Sends a teleport request to another player.
+    usage: /<command> <player>
+  tpahere:
+    description: Sends a request to teleport another player to you.
+    usage: /<command> <player>
+  tpaccept:
+    description: Accept a teleport request
+    usage: /<command>
+  tpdeny:
+    description: Denies a teleport request.
+    usage: /<command>
+  sethome:
+    description: Sets a home location.
+    usage: /<command> <name>
+  delhome:
+    description: Deletes a home location.
+    usage: /<command> <name>
+  home:
+    description: Teleports to a home location.
+    usage: /<command> <name>
+  homelist:
+    description: Lists all home locations.
+    usage: /<command>
+  setwarp:
+    description: Sets a warp location.
+    usage: /<command> <name>
+  delwarp:
+    description: Deletes a warp location.
+    usage: /<command> <name>
+  warp:
+    description: Teleports to a warp location.
+    usage: /<command> <name>
+  warplist:
+    description: Lists all warp locations.
+    usage: /<command>
+  rtp:
+    description: Randomly teleports you to a safe location.
+    usage: /<command>
+permissions:
+  fancyessentials.command.kick:
+    description: Allows use of /kick command.
+    default: op
+  fancyessentials.command.ban:
+    description: Allows use of /ban command.
+    default: op
+  fancyessentials.command.unban:
+    description: Allows use of /unban command.
+    default: op
+  fancyessentials.command.playerinfo:
+    description: Allows use of /playerinfo command.
+    default: op
+  fancyessentials.command.tp:
+    description: Allows use of /tp command.
+    default: op
+  fancyessentials.command.tpa:
+    description: Allows use of /tpa command.
+    default: op
+  fancyessentials.command.tpahere:
+    description: Allows use of /tpahere command.
+    default: op
+  fancyessentials.command.tpdeny:
+    description: Allows use of /tpdeny command.
+    default: op
+  fancyessentials.command.sethome:
+    description: Allows use of /sethome command.
+    default: op
+  fancyessentials.command.delhome:
+    description: Allows use of /delhome command.
+    default: op
+  fancyessentials.command.home:
+    description: Allows use of /home command.
+    default: op
+  fancyessentials.command.homelist:
+    description: Allows use of /homelist command.
+    default: op
+  fancyessentials.command.setwarp:
+    description: Allows use of /setwarp command.
+    default: op
+  fancyessentials.command.delwarp:
+    description: Allows use of /delwarp command.
+    default: op
+  fancyessentials.command.warp:
+    description: Allows use of /warp command.
+    default: op
+  fancyessentials.command.warplist:
+    description: Allows use of /warplist command.
+    default: op
+  fancyessentials.command.rtp:
+    description: Allows use of /rtp command.
+    default: op
