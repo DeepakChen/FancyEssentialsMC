@@ -3,16 +3,25 @@ package com.deepakchen.fancyessentials;
 import com.deepakchen.fancyessentials.feature.LocaleManager;
 import com.deepakchen.fancyessentials.feature.home.HomeManager;
 import com.deepakchen.fancyessentials.feature.home.HomeTeleportService;
-import com.deepakchen.fancyessentials.feature.home.commands.*;
+import com.deepakchen.fancyessentials.feature.home.commands.DelHomeCommand;
+import com.deepakchen.fancyessentials.feature.home.commands.HomeCommand;
+import com.deepakchen.fancyessentials.feature.home.commands.HomeListCommand;
+import com.deepakchen.fancyessentials.feature.home.commands.SetHomeCommand;
 import com.deepakchen.fancyessentials.feature.players.PlayerManager;
-import com.deepakchen.fancyessentials.feature.players.commands.*;
+import com.deepakchen.fancyessentials.feature.players.commands.BanCommand;
+import com.deepakchen.fancyessentials.feature.players.commands.KickCommand;
+import com.deepakchen.fancyessentials.feature.players.commands.PlayerInfoCommand;
+import com.deepakchen.fancyessentials.feature.players.commands.UnbanCommand;
 import com.deepakchen.fancyessentials.feature.randomteleport.RTPCommand;
 import com.deepakchen.fancyessentials.feature.teleport.TeleportManager;
 import com.deepakchen.fancyessentials.feature.teleport.TeleportTaskService;
 import com.deepakchen.fancyessentials.feature.teleport.commands.*;
 import com.deepakchen.fancyessentials.feature.warp.WarpManager;
 import com.deepakchen.fancyessentials.feature.warp.WarpTeleportService;
-import com.deepakchen.fancyessentials.feature.warp.commands.*;
+import com.deepakchen.fancyessentials.feature.warp.commands.DelWarpCommand;
+import com.deepakchen.fancyessentials.feature.warp.commands.SetWarpCommand;
+import com.deepakchen.fancyessentials.feature.warp.commands.WarpCommand;
+import com.deepakchen.fancyessentials.feature.warp.commands.WarpListCommand;
 import com.deepakchen.fancyessentials.listener.BanListener;
 import com.deepakchen.fancyessentials.utils.CommandRegistrar;
 import com.deepakchen.fancyessentials.utils.CooldownTracker;
@@ -42,6 +51,7 @@ public final class FancyEssentials extends JavaPlugin {
 
     @Getter
     private final WarpManager warpManager = new WarpManager(new File(getDataFolder(), "server_warps.dat"));
+
 
     @Override
     public void onEnable() {
